@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: states
+  name: states
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: states
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: states
+    spec:
+      containers:
+        - image: gcr.io/careful-form-307204/indian-states
+          name: indian-states
+          resources: {}
+status: {}
