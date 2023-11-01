@@ -18,7 +18,7 @@ spec:
         app: states
     spec:
       containers:
-        - image: gcr.io/careful-form-307204/indian-states
+        - image: hiashish/skaffold-introduction
           name: indian-states
           resources: {}
 status: {}

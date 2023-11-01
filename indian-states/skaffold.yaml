@@ -4,7 +4,7 @@ metadata:
   name: indian-states
 build:
   artifacts:
-    - image: gcr.io/careful-form-307204/indian-states
+    - image: hiashish/skaffold-introduction
       jib:
         project: com.example:indian-states
 deploy:
