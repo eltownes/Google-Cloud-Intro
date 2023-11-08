@@ -3,9 +3,25 @@
   * `pom.xml` - SpringBoot  - Java - Docker image - Maven plugin
   * `mydeployment.yaml` - image
   * `skaffold.yaml` - image
- 
+
+* #### Skaffold commands (ctrl + c to exit)
+
+```
+skaffold diagnose
+skaffold build
+skaffold dev
+
+kubectl get nodes
+kubectl get pods
+kubectl get svc
+kubectl describe pod <pod-name>
+
+curl localhost:8080/states
+curl -X GET "localhost:8080/state?name=Karnataka"
+```
 
 
+<br>
 
 ---
 
@@ -28,4 +44,6 @@ This is a simple Spring Boot application which, when accessed via /states or /st
 
 # Demo
 [![Demo](https://img.youtube.com/vi/KR8DqxaOGBw/2.jpg)](https://www.youtube.com/watch?v=KR8DqxaOGBw)
+
+
 
